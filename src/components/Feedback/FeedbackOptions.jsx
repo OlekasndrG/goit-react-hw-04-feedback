@@ -11,6 +11,7 @@ class FeedbackOptions extends Component {
               type="button"
               key={nanoid()}
               onClick={this.props.onLeaveFeedback}
+              name={button}
             >
               {button}
             </button>
@@ -23,7 +24,7 @@ class FeedbackOptions extends Component {
 
 FeedbackOptions.propTypes = {
   onLeaveFeedback: PropTypes.func.isRequired,
-  options: PropTypes.arrayOf(PropTypes.string.isRequired),
+  options: PropTypes.arrayOf(PropTypes.number.isRequired),
 };
 
 export default FeedbackOptions;

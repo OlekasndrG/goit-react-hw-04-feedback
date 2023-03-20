@@ -5,7 +5,6 @@ import { Container } from './Statistics.styled';
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <Container>
-      <h3>Statistics</h3>
       <div>
         <p>Good : {good} </p>
         <p>Neutral : {neutral} </p>
